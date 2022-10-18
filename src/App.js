@@ -1,9 +1,11 @@
-import Header from "./Pages/Shared/Header/Header";
+import { RouterProvider } from "react-router-dom";
+
+import { routes } from "./Routes/Public/Routes";
 
 function App() {
   return (
-    <div>
-      <Header></Header>
+    <div className="xl:container xl:mx-auto">
+      <RouterProvider router={routes}> </RouterProvider>
     </div>
   );
 }
