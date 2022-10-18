@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -16,9 +17,9 @@ const Home = () => {
               place. We provide you a best hotel nears you and give the best
               discount as much as possible.
             </p>
-            <button to="/view-hotels" className="btn btn-neutral">
-              View Hotels
-            </button>
+            <Link to="/view-hotels">
+              <button className="btn btn-neutral">View Hotels</button>
+            </Link>
           </div>
         </div>
       </div>
